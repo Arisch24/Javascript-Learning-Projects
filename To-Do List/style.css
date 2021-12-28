@@ -1,33 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
 *{
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 body{
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 .container{
-    margin:2em;
+    background-color: #FDF5DF;
+    padding:50px;
 }
 
+/* Form style */
 .todo-form{
+    background-color: #fff;
+    box-shadow:1px 1px 10px black;
+    border-radius: 10px;
     width:750px;
     height: max-content;
     margin:auto;
-    border:1px solid black;
     padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.line{
+    margin-bottom: 20px;
+    border:1px solid lightgray;
+    width: 500px;
+}
+
 .todo-form > *{
     margin-bottom: 20px;
 }
 
+/* Input style */
+#todo{
+    width: 300px;
+    height: 20px;
+    padding: 5px;
+}
+
+#todo::-webkit-input-placeholder{
+    font-size: 16px;
+}
+
+/* Submit button style */
+#submit-btn{
+    font-size: 14px;
+    width:auto;
+    height: 35px;
+    padding: 5px;
+    color:#f8bd1b;
+    border: 1px solid #f8bd1b;
+    background-color: white;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+#submit-btn:hover{
+    background-color: #f8bd1b;
+    color:white;
+    transition:200ms all ease-in-out;
+}
+
+.container-list{
+    background-color: #f8dc8e;
+    padding:50px;
+}
+
+/* Output list style */
 .todo-list{
-    border:1px solid black;
+    background-color: #fff;
+    box-shadow:1px 1px 10px black;
+    border-radius: 10px;
     margin:auto;
     display:flex;
     flex-direction: column;

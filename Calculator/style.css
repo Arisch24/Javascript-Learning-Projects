@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(255, 197, 103);
+}
+
+.container{
+    width:1000px;
+    margin:auto;
+    padding:40px;
+    text-align: center;
+}
+
+/* Header */
+.title{
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+/* Calculator panel */
+.calculator{
+    border-radius: 10px;
+    background-color: #fff;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    box-shadow:1px 1px 40px rgba(0, 0, 0, 0.2);
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.row > input[type="button"]{
+    border: 0.1px solid lightgray;
+    padding: 10px;
+    width:calc(600px / 4);
+    height:calc(500px / 5);
+    font-size: 2em;
+}
+
+/* Output box */
+#output{
+    background-color: #32325d;
+    border-radius: 10px 10px 0 0;
+    border: none;
+    width: 600px;
+    height: 200px;
+    font-size: 4em;
+    text-align: right;
+}
+
+#output::-webkit-input-placeholder{
+    font-size: 1.1em;
+    color: #fff;
+    margin-right: 20px;
+}
+
+/* Each individual buttons */
+#clear, #divide, #multiply{
+    background-color: #c0c0c0;
+}
+
+#del{
+    background-color: #fb3b3b;
+}
+
+/* Empty button */
+#empty{
+    border-radius: 0px 0px 0px 10px;
+}
+
+#minus, #plus, #equal, #extra{
+    background-color: #ffc77d;
+}

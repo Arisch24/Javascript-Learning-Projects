@@ -35,7 +35,7 @@ body{
 
 .group{
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 27px;
 }
 
 .form-input{
@@ -46,6 +46,16 @@ body{
 }
 
 #submit-btn{
+    border-radius: 5px;
+    border:1px solid black;
     font-size:25px;
-    padding: 5px;
+    padding: 7px;
+    color: #fff;
+    background-color: #000;
+    transition: 150ms all ease-in-out;
+}
+
+#submit-btn:hover{
+    color:#000;
+    background-color: #fff;
 }

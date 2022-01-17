@@ -23,13 +23,13 @@ body{
     flex-direction: row;
     background-color: #fff;
     box-shadow:1px 1px 40px rgba(0, 0, 0, 0.3);
-    border-radius: 50px;
+    border-radius: 35px;
 }
 
 .register-info{
     text-align: center;
-    width: 60%; /* get full width of container and divide by 2 */
-    border-radius: 50px 0 0 50px;
+    width: 60%;
+    border-radius: 35px 0 0 35px;
     position: relative;
     background-image: url("https://www.kindpng.com/picc/m/478-4789401_web-development-illustration-png-transparent-png.png");
     background-repeat: no-repeat;
@@ -40,47 +40,103 @@ body{
 
 .register-info > .title{
     position: absolute;
-    top: 120px;
+    top:15%;
     right:25%;
     left:25%;
     font-size: 3.5rem;
+    color:#2c7cf3;
+}
+
+.register-info > .subtitle{
+    position: absolute;
+    top: 24%;
+    right:25%;
+    left:25%;
+    font-size: 14px;
 }
 
 .register-content{
     position: relative;
-    width: 40%; /* get full width of container and divide by 2 */
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    padding:0 50px;
+    padding:40px;
 }
 
 .register-content > .title{
     position: absolute;
-    top: 140px;
+    top: 15%;
     right:45%;
     font-size: 3rem;
 }
 
-label,
-input{
-    font-size: 1.4rem;
+.register-content > .subtitle{
+    position: absolute;
+    top: 24%;
+    left:7%;
+    font-size: 14px;
+}
+
+.login{
+    text-decoration: none;
+}
+
+.login:hover{
+    border-bottom:1px solid blue;
+}
+
+label{
+    font-size: 1.2rem;
 }
 
 .form-label{
     margin-top:20px;
+    margin-bottom: 5px;
 }
 
 #username,
 #password,
 #phoneNum{
-    border-radius: 5px;
+    font-size: 1rem;
     width: 350px;
-    height: 30px;
+    padding: 10px;
+    border:1px solid #666;
+    outline: none;
+    transition: 0.25s;
+}
+
+#username:hover,
+#password:hover,
+#phoneNum:hover{
+    border:1px solid #2c7cf3;
+}
+
+#username:focus,
+#password:focus,
+#phoneNum:focus{
+    border:2px solid #52fb6f;
 }
 
 #submit{
     margin-top: 40px;
-    width: 175px;
+    font-size: 0.9rem;
+    width: 125px;
     height: 40px;
+    color:#fff;
+    border:1px solid #2c7cf3;
+    border-radius: 20px;
+    background-color: #2c7cf3;
+}
+
+#submit:hover{
+    background-color: #3e8fff;
+    cursor: pointer;
+}
+
+.register-content > .tc{
+    position: absolute;
+    bottom: 5%;
+    right:5%;
+    left: 5%;
 }

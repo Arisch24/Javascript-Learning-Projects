@@ -3,6 +3,7 @@ const tipPercent = document.getElementById("tip-percent");
 const tipAmt = document.getElementById("tip-amt");
 const totalBill = document.getElementById("total-bill");
 let amount;
+let total;
 
 document.getElementById("submit-btn").addEventListener("click", () => {
     try{

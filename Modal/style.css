@@ -47,7 +47,7 @@ body{
 }
 
 /* Modal */
-.box{
+.modal-container{
     display: none;
     position: fixed;
     z-index: 1;

@@ -20,7 +20,7 @@ body{
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    height: 100vh;
+    min-height: 100vh; /* very important to allow the page to increase size */
     margin: 0 auto;
     width: 1400px;
     padding: 20px;
@@ -29,7 +29,13 @@ body{
 
 .title{
     font-size: 3.5rem;
-    margin-bottom: 2rem;
+}
+
+.info{
+    font-size: 1.125rem;
+    color: rgb(216, 216, 0);
+    margin: 1.5rem 0 3rem 0;
+    user-select: none;
 }
 
 #search-bar{

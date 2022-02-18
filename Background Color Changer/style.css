@@ -28,18 +28,26 @@ body{
     bottom:25%;
 }
 
+.card{
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: .75rem;
+    background-color: #fff;
+}
+
 #btn-change{
     cursor: pointer;
     font-size: 1em;
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
-    background-color: #fff;
-    color:#000;
+    background-color: #000;
+    color:#fff;
+    border: 1px solid #333;
     transition:200ms all ease-out;
 }
 
 #btn-change:hover{
-    background-color: #000;
-    color:#fff
+    background-color: #fff;
+    color:#000;
 }

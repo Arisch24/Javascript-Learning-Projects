@@ -64,6 +64,7 @@ body{
 }
 
 #outputActive{
+    cursor: pointer;
     margin-top: 3rem;
     padding: 2rem;
     border-radius: 10px;
@@ -74,16 +75,20 @@ body{
     align-items: center;
 }
 
-#copyBtn{
+#outputActive > #copyBtn{
+    opacity: 0;
     margin-left: 1.2rem;
     padding: 10px;
     background-color: transparent;
     color: var(--white);
     border-radius: 5px;
     border: 1px solid #adbac7;
+    transition: opacity 150ms ease-in-out;
+    transition: background-color 150ms ease-in-out;
 }
 
-#copyBtn:hover{
-    cursor: pointer;
+#outputActive:hover > #copyBtn{
+    opacity: 1;
     background-color: #48525f;
+    cursor: pointer;
 }

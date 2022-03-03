@@ -37,7 +37,7 @@ submitBtn.addEventListener("click", () => {
     output.append(em, btn);
 
     // let user copy content
-    document.getElementById('copyBtn').onclick = function(){
+    output.onclick = function(){
         let words = em.textContent;
         navigator.clipboard.writeText(words)
             .then(() => {

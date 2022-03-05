@@ -36,8 +36,8 @@ body{
     margin-bottom: 1.5rem;
 }
 
-label,
-textarea {
+.card > label,
+.card > textarea {
     font-size: 1.25rem;
 }
 

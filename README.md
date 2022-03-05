@@ -34,3 +34,5 @@ git clone https://github.com/Arisch24/Javascript-Beginner-Projects.git
 | Clock | A live clock that shows the current date and time of the day for the user to refer to. The hours, minutes and seconds are displayed as well and is updated per second. |
 | Form Authentication | A live form authenticator that authenticated the values entered by the user when they type in the input box |
 | BMI Calculator | A website that calculates your BMI and displayed it for you to see the value and view your category. |
+| FAQ page | A page that expands the details of a section when you expand it |
+| Word Counter | A counter that counts the words and characters from a sentence entered by the user. |

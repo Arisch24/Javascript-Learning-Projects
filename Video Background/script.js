@@ -1,14 +1,16 @@
 let video = document.getElementById('snow');
 let volumeBox = document.querySelector('.volume-container');
-let volume = document.getElementById('volume');
+let vidStatus = document.getElementById('status');
 
 document.addEventListener('keydown', (e) => {
 	switch (e.code) {
 		case 'Space':
 			if (video.paused) {
 				video.play();
+				showPlayPause('\u23F5');
 			} else {
 				video.pause();
+				showPlayPause('\u23F8');
 			}
 			break;
 		case 'ArrowUp':
@@ -32,14 +34,22 @@ document.addEventListener('keydown', (e) => {
 				showVolume();
 			}
 	}
-
-	function showVolume() {
-		// show and change the volume
-		let vol = (video.volume * 100).toFixed(0);
-		volume.innerText = `${vol}%`;
-		volumeBox.classList.add('active');
-		setTimeout(() => {
-			volumeBox.classList.remove('active');
-		}, 400);
-	}
 });
+
+function showPlayPause(value) {
+	vidStatus.innerText = value;
+	volumeBox.classList.add('active');
+	setTimeout(() => {
+		volumeBox.classList.remove('active');
+	}, 350);
+}
+
+function showVolume() {
+	// show and change the volume
+	let vol = (video.volume * 100).toFixed(0);
+	vidStatus.innerText = `${vol}%`;
+	volumeBox.classList.add('active');
+	setTimeout(() => {
+		volumeBox.classList.remove('active');
+	}, 350);
+}

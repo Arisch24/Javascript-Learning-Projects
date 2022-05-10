@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen:300,regular,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oxygen, sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 3rem 0;
+}
+
+.img-container {
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container:hover button {
+    opacity: 1;
+}
+
+img {
+    height: 700px;
+    display: none;
+}
+
+/* Button styles */
+button {
+    cursor: pointer;
+    position: absolute;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    opacity: 0;
+    transition: opacity 350ms ease-in-out;
+}
+
+#forward {
+    top: 50%;
+    right: 2rem;
+    transform: translate(0, -50%);
+}
+
+#backward {
+    top: 50%;
+    left: 2rem;
+    transform: translate(0, -50%);
+}
